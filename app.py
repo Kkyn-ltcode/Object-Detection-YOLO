@@ -13,8 +13,7 @@ app.config['UPLOAD_FOLDER'] = 'uploads/'
 
 class Detection:
     def __init__(self):
-        #download weights from here:https://github.com/ultralytics/ultralytics and change the path
-        self.model = YOLO(r"yolov8n.pt")
+        self.model = YOLO(r"yolov8x.pt")
 
     def predict(self, img, classes=[], conf=0.5):
         if classes:
